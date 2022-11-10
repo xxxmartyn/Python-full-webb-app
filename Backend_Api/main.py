@@ -49,7 +49,7 @@ def deleteProduct():
     with sqlite3.connect(DATABASE) as con:
         try:
             cur = con.cursor()
-            cur.execute(f"delete from {TABLE_PRODUCT} where id = ?", id)
+            cur.execute(f"delete from {TABLE_PRODUCT} where id = {id}")
             msg = "Elem sikeresen törölve"
         except:
             msg = "Sikertelen törlés kisérlet"
