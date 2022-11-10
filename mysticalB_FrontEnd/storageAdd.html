@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mysticalButcher</title>
+</head>
+<body>
+    <h2>Raktárkészlet</h2>
+        <div class="navbar">
+        <a href="./index.html" class="active">Főoldal</a>
+        <a href="./storageAdd.html">Adat hozzáadása</a>
+        <a href="./storage.html">Elemek lisázása</a>
+        <a href="./storage.html">Elemek frisítése</a>
+        <a href="./storage.html">Elemek törlése</a>
+    </div>
+    <form action = "" method="post">
+    <table>
+        <tr><td>Néve</td><td><input type="text" id="name" name="name"></td></tr>
+        <tr><td>Ár</td><td><input type="text" id="price" name="price"></td></tr>
+        <tr><td>Drabszám</td><td><input type="text" id="piece" name="piece"></td></tr>
+        <tr><td>Leírás</td><td><input type="text" id="description" name="description"></td></tr>
+        <tr><td>Kép útvonal</td><td><input type="text" id="imgRoute" name="imgRoute"></td></tr>
+
+        <tr><td><button onclick="sendPost()" id="sub" type="submit" value="Submit">Adat feltöltése</button></td></tr>
+    </table>
+    </form>
+    <script src="StorageAdd.js">
+    </script>
+</body>
+</html>
